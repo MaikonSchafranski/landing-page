@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{html,ts}",
-  ],
+  content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      gradientColorStopPositions: {
+        33: "33%",
+      },
+    },
+    plugins: [],
   },
-  plugins: [],
-}
-
+};
