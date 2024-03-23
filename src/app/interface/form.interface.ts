@@ -1,0 +1,3 @@
+interface formResponse{
+    menssage: string
+}

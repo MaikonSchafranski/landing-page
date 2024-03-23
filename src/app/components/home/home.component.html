@@ -1,18 +1,23 @@
 <app-header></app-header>
 
-<main class="flex flex-col gap-20 mt-5">
+<main class="mt-5 flex flex-col gap-20">
   <section
-    class="flex flex-col items-start gap-5 md:flex-row px-5 md:items-center"
+    class="flex flex-col items-start gap-5 px-5 md:items-center lg:flex-row"
   >
     <div>
-      <span class="font-bold text-xl text-[#475569] uppercase"
+      <span class="text-xl font-bold uppercase text-[#475569]"
         >Kipper consultoria</span
       >
-      <h1 class="font-semibold text-[#0F172A] text-5xl xl:text-6xl">
+      <h1 class="text-5xl font-semibold text-[#0F172A] xl:text-6xl">
         A consultoria que você busca para seu software
       </h1>
     </div>
-    <img class="px-5" ngSrc="assets/home01.png" width="669" height="536" />
+    <img
+      class="px-5 xl:w-[669px]"
+      ngSrc="assets/home01.png"
+      width="600"
+      height="536"
+    />
   </section>
 
   <app-benefit></app-benefit>

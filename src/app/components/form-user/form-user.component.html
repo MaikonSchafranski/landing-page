@@ -1,7 +1,22 @@
-<form class="flex flex-col items-start justify-center gap-5">
+<form class="flex flex-col items-start justify-center gap-5" [formGroup]="form">
   <label class="text-white" for="email">Nome:</label>
-  <input class="" id="name" type="text" />
-  <label class="text-white" for="email">Email:</label>
-  <input id="email" />
-  <app-button-primary btn-text="se inscreva"></app-button-primary>
+  <input
+    class="w-full border-b-2 border-white bg-[#351686] p-2 text-base text-white"
+    formControlName="name"
+    id="name"
+    type="text"
+  />
+  <label class="mt-3 text-white" for="email">Email:</label>
+  <input
+    class="w-full border-b-2 border-white bg-[#351686] p-2 text-base text-white"
+    formControlName="email"
+    id="email"
+    type="email"
+  />
+  <app-button-primary
+    btn-text="se inscreva"
+    variant="primary"
+    (submit)="onsubmit()"
+    [disabled]="!form.valid"
+  ></app-button-primary>
 </form>

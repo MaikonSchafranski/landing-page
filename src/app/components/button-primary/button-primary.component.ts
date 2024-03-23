@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { log } from 'node:console';
 
 type BtnVariants = 'primary' | 'secondary';
 @Component({
